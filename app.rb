@@ -10,8 +10,9 @@ class App < Sinatra::Base
 
   # This is a sample dynamic route.
   get "/hello/:name" do
-    binding.pry
+
     @user_name = params[:name]
+    binding.pry
     "Hello Sam #{@user_name}!"
   end
 
